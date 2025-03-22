@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskBuddy Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script defer src="dashboard.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">TaskBuddy</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-tasks"></i> My Tasks</a></li>
+                <li><a href="#"><i class="fas fa-calendar-alt"></i> Calendar</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i> Analytics</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
+        <button id="logout"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header>
+            <h1>Welcome, <span id="user-name">User</span></h1>
+            <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+        </header>
+
+        <section class="dashboard-overview">
+            <div class="overview-card">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <h2>12</h2>
+                    <p>Completed Tasks</p>
+                </div>
+            </div>
+            <div class="overview-card">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h2>5</h2>
+                    <p>Pending Tasks</p>
+                </div>
+            </div>
+            <div class="overview-card">
+                <i class="fas fa-calendar-day"></i>
+                <div>
+                    <h2>3</h2>
+                    <p>Today's Tasks</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Task Management -->
+        <section class="tasks-section">
+            <h2>My Tasks</h2>
+            <div class="task-input">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                <button id="add-task"><i class="fas fa-plus"></i></button>
+            </div>
+            <ul id="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
