@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar nav ul li a.active {
+    font-weight: bold;
+    color: #1abc9c;
+}
+
+#logout {
+    background: #e74c3c;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+#logout:hover {
+    background: #c0392b;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Dashboard Overview */
+.dashboard-overview {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.overview-card {
+    background: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.overview-card i {
+    font-size: 24px;
+    color: #1abc9c;
+}
+
+/* Tasks Section */
+.tasks-section {
+    margin-top: 30px;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#add-task {
+    padding: 10px;
+    background: #1abc9c;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#add-task:hover {
+    background: #16a085;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #2c3e50;
+    color: white;
+}
+
+.dark-mode .sidebar {
+    background: #1c2833;
+}
+
+.dark-mode .main-content {
+    background: #34495e;
+}
+
+.dark-mode .overview-card {
+    background: #1c2833;
+    color: white;
+}
